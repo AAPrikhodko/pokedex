@@ -1,0 +1,11 @@
+@import "src/App";
+
+.notFound_wrapper {
+  padding: 50px;
+  color: $color-primary;
+
+  .notFound_description {
+    text-align: center;
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,74 @@
+@import 'antd/dist/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Merriweather:ital,wght@0,300;1,400&display=swap');
+
+$color-primary: #f9f90b;
+$color-secondary: #4d66c0;
+$color-third: #E4A2A4FF;
+$color-fourth: #FFFFFFFF;
+$color-fifth: #000000FF;
+
+$fontM: "Merriweather";
+$fontJ: "Josefin+Sans";
+
+@mixin fontSpaceTrans($f, $s, $t) {
+  font: $f;
+  letter-spacing: $s;
+  text-transform: $t
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url("img/bg-1.jpg") no-repeat fixed;
+  background-size: cover;
+
+  .header {
+    padding: 10px 30px;
+
+    @media (max-width: 800px) {
+      padding: 10px 10px;
+    }
+  }
+
+  .content {
+    flex: 1;
+    padding: 10px 100px;
+
+    @media (max-width: 800px) {
+      padding: 10px 10px;
+    }
+  }
+}
+
+.pokeModal {
+  :global .ant-modal-content {
+    background: $color-primary;
+
+    .ant-card-body {
+      background: $color-secondary;
+
+      .ant-card-meta-detail {
+        text-align: center;
+      }
+
+      .ant-card-cover {
+        background: $color-primary;
+      }
+    }
+
+    .ant-card-meta-title {
+      color: $color-fourth;
+      font-family: $fontM;
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 1000;
+    }
+
+    .ant-card-meta-description {
+      color: $color-fourth;
+    }
+  }
+}
+

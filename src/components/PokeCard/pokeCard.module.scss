@@ -1,0 +1,38 @@
+@import "./src/App";
+
+.pokeCard {
+  margin: 0 auto;
+  width: 70%;
+
+  @media (max-width: 500px) {
+    width: 80%;
+  }
+
+  img {
+    padding: 30px;
+  }
+
+  .meta {
+    color: $color-fourth;
+    align-items: center;
+
+    .descriptionItem {
+      padding: 2px;
+
+      .label {
+        text-transform: capitalize;
+        opacity: 0.7;
+      }
+
+      .value {
+        font-weight: 800;
+        letter-spacing: 1px;
+      }
+
+      .tag {
+        font-size: 14px;
+        padding: 3px 15px;
+      }
+    }
+  }
+}

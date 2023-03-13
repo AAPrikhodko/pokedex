@@ -1,0 +1,17 @@
+@import "./src/App";
+
+.customCard {
+  opacity: 0.9;
+  margin: 30px 0;
+  border-radius: 20px;
+
+  :global .ant-card-head {
+    background-color: $color-primary;
+    border-radius: 20px 20px 0 0;
+
+    .ant-card-head-title {
+      @include fontSpaceTrans(600 20px $fontM, 2px, uppercase);
+      text-align: center;
+    }
+  }
+}

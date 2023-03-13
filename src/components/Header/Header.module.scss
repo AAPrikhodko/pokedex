@@ -1,0 +1,90 @@
+@import "./src/App";
+
+.header_wrapper {
+  padding: 0 50px;
+  opacity: 0.8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-primary;
+  min-height: 150px;
+  border-radius: 20px;
+
+  @media (max-width: 600px) {
+    margin: 10px 0;
+    padding: 0 10px
+  }
+
+  .header_logo {
+    &:hover {
+      cursor: pointer;
+    }
+
+    img {
+      max-width: 200px;
+      max-height: 80px;
+
+      @media (max-width: 650px) {
+        max-width: 100px;
+        max-height: 40px;
+      }
+    }
+  }
+
+  .header_page_block {
+    flex-grow: 1;
+
+    @media (max-width: 650px) {
+      width: 50%;
+    }
+
+    .header_caption {
+      @include fontSpaceTrans(600 24px $fontM, 10px, uppercase);
+      text-align: center;
+      margin: 20px 0;
+
+      @media (max-width: 650px) {
+        font-size: 16px;
+      }
+    }
+
+    .header_line {
+      border: 1px solid $color-fifth;
+      margin: 0 200px;
+
+      @media (max-width: 800px) {
+        margin: 0 50px;
+      }
+    }
+
+    .header_page_group {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0;
+
+      .header_page_group_title {
+        @include fontSpaceTrans(400 18px $fontM, 1px, uppercase);
+
+        @media (max-width: 600px) {
+          font: 400 12px "Merriweather";
+        }
+
+        &:hover {
+          color: $color-secondary;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .avatar {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.header_menu_item {
+  color: $color-secondary;
+  @include fontSpaceTrans(400 18px $fontM, 1px, uppercase);
+}

@@ -1,0 +1,42 @@
+{
+  "header": {
+    "caption": "Pokedex"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "notFound": {
+    "description": "This page is not found"
+  },
+  "searchManager": {
+    "filters": {
+      "title": "Filters",
+      "defaultPlaceholder": "Search"
+    },
+    "table": {
+      "title": "Results",
+      "columns": {
+        "titles": {
+          "weight": "Weight",
+          "height": "Height",
+          "avatar": "",
+          "name": "Name",
+          "types": "Types",
+          "stats": "Main stats",
+          "actions": "Actions"
+        }
+      },
+      "noLogo": "No logo",
+      "loaderText": "Pokemons are on their way . . . ",
+      "addFavourite": "Add to favourites",
+      "removeFavourite": "Remove from favourites",
+      "favourites": "Favourites"
+    }
+  },
+  "pokeCard": {
+    "weight": "Weight",
+    "height": "Height",
+    "types": "Types",
+    "stats": "Main stats"
+  }
+}
